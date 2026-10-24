@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 40px 20px;
+    background: #f7f7f7;
+    font-family: Arial, sans-serif;
+}
+.prouduct-card {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.prouduct-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    display: block;
+    border-radius: 15px;
+}
+
+.prouduct-title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+.prouduct-description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+}
+.prouduct-price {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.add-to-cart {
+    width: 100%;
+    height: 48px;
+    border: none;
+    border-radius: 25px;
+    background: #1683c5;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    opacity: 0.9;
+}
+
+
+.love-btn {
+    font-size: 50px;
+    background: none;
+    border: none;
+    cursor: grabbing;
+    transition: 2.0s;
+}
+
+.love-btn:hover {
+    transform: scale(5.0);
+}
+
+.love-btn.active {
+    animation: pop 4.0 ease;
+}
+
+@keyframes pop {
+    0% { transform: scale(1);}
+    25% { transform: scale(2.0);}
+    50% { transform: scale(4.0);}
+    75% { transform: scale(2.0);}
+    100% { transform: scale(1);}
+    
+}

@@ -1,0 +1,65 @@
+* {
+    margin: 0%;
+    border-radius: 50px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(175, 218, 249);
+    font-size: large;
+    padding: 20px;
+    
+}
+
+.conteiner{
+    max-width: 100px;
+    margin: auto;
+}
+
+.card {
+    background: none;
+    background-color: rgb(47, 178, 230);
+    border-radius: 3%;
+    border: 20 px solid;
+    transition: 2.0s;
+
+
+}
+
+.card h3 {
+    font-size: medium;
+    margin-bottom: 12px;
+    color: black;
+}
+
+.card p {
+    color: rgb(29, 37, 37);
+    line-height: 1.7;
+    font-size: large
+}
+
+.love-btn {
+    font-size: 50px;
+    background: none;
+    border: none;
+    cursor: grabbing;
+    transition: 2.0s;
+}
+
+.love-btn:hover {
+    transform: scale(5.0);
+}
+
+.love-btn.active {
+    animation: pop 4.0 ease;
+}
+
+@keyframes pop {
+    0% { transform: scale(1);}
+    25% { transform: scale(2.0);}
+    50% { transform: scale(4.0);}
+    75% { transform: scale(2.0);}
+    100% { transform: scale(1);}
+    
+}
